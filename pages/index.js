@@ -1,20 +1,19 @@
 import Head from 'next/head'
-import Link from 'next/link';
 import Image from "next/image";
-
+import Navbar from "../components/Navigation";
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function Home() {
-
-
   return (
     <>
       <Head>
         <title>Cuong Nguyen</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      Welcome to <Link href="/experience">Next.js!</Link>
-      <Image src="/images/CartoonPanda.png" height={144} width={144} alt="CartoonPanda"/>
+      <Navbar />
+        <div className="container">
+            <Image src="/images/CartoonPanda.png" height={144} width={144} alt="CartoonPanda"/>
+        </div>
       <style jsx global>{`
         html,
         body {
